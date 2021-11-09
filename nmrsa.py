@@ -194,3 +194,11 @@ sentiment_predict('이딴게 영화냐 ㅉㅉ')
 sentiment_predict('감독 뭐하는 놈이냐?')
 sentiment_predict('와 개쩐다 정말 세계관 최강자들의 영화다')
 
+data = [[sentiment_predict('이 영화 개꿀잼 ㅋㅋㅋ'),
+sentiment_predict('이 영화 핵노잼 ㅠㅠ'),
+sentiment_predict('이딴게 영화냐 ㅉㅉ'),
+sentiment_predict('감독 뭐하는 놈이냐?'),
+sentiment_predict('와 개쩐다 정말 세계관 최강자들의 영화다')]]
+
+df = pd.DataFrame(data)
+df.to_csv("C:\\workspace\\NMRSA\\nmrsa.csv", header=False, index=False)
